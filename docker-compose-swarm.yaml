@@ -6,8 +6,6 @@ services:
             replicas: 3
         ports:
             - 8080:80
-        volumes:
-            - "/home/vagrant/nutterbg-bgapp/bgapp-mgromov/web:/var/www/html:ro"
         networks:
             - app-network
     db:
