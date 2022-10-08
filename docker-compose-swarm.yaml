@@ -1,7 +1,7 @@
 version: "3.3"
 services:
     web:
-        image: mgromov/bgapp-web
+        image: nutterbg/bgapp-web
         deploy:
             replicas: 3
         ports:
@@ -9,7 +9,7 @@ services:
         networks:
             - app-network
     db:
-        image: mgromov/bgapp-db
+        image: nutterbg/bgapp-db
         networks:
             - app-network
         environment:
